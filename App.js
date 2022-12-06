@@ -9,8 +9,6 @@ import {
  
 } from 'firebase/database';
 import Layout from "./Components/Layout"
-import Temperature from './Components/Temperature';
-
 
 const App = () => {
 
@@ -19,7 +17,6 @@ const App = () => {
   return (
   <View>
 <Layout/>
-{/* <Temperature/> */}
 
   </View> 
   
