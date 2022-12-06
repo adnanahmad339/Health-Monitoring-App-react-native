@@ -1,0 +1,2 @@
+# Health-Monitoring-App-react-native
+My first react native based android app for health monitoring system. It is an IOT based app. The hardware contains ESP32-a controller with built-in Wi-Fi module, pulse sensor for sensing beats per minute, humidity and temperature sensors for observing the changes in surroundings. The data is sent through esp32 built-in Wi-Fi module to firebase real-time database. From where it is fetched in Health-Monitoring App and displayed in real time.
