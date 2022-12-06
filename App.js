@@ -1,20 +1,29 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { FlatList, StyleSheet, Text, View } from 'react-native';
+import { db } from './Components/FirebaseConfig';
+import database from '@react-native-firebase/database';
+import { Component, useEffect, useState } from 'react';
+import {
+  ref,
+  onValue,
+ 
+} from 'firebase/database';
+import Layout from "./Components/Layout"
+import Temperature from './Components/Temperature';
 
-export default function App() {
+
+const App = () => {
+
+
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+  <View>
+<Layout/>
+{/* <Temperature/> */}
+
+  </View> 
+  
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+ 
+export default App;
